@@ -1,1 +1,1 @@
-require('./orbit');
+module.exports = require('./orbit');

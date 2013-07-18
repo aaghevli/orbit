@@ -1,8 +1,6 @@
 var orbit = require('./orbit');
 
-var bodies = orbit.defaultOrbitalElements();
-
-var mercuryElements = orbit.computeOrbitalElementsByTime(bodies[0], new Date("April 19, 1990"));
+var mercuryElements = orbit.computeOrbitalElementsByTime(orbit.mercury, new Date("April 19, 1990"));
 console.log(mercuryElements);
 
 assert(-3543, mercuryElements.d, 'd');
