@@ -200,8 +200,8 @@
 		var yeclip = r * ( Math.sin(n_rad) * Math.cos(xw_rad) + Math.cos(n_rad) * Math.sin(xw_rad) * Math.cos(i_rad) );
 		var zeclip = r * Math.sin(xw_rad) * Math.sin(i_rad);
 
-		var RA   = Math.atan2(yeclip, xeclip);
-	    var Decl = Math.asin(zeclip/r);
+		var RA   = toDegrees(Math.atan2(yeclip, xeclip));
+	    var Decl = toDegrees(Math.asin(zeclip/r));
 
 		return {
 			date: date,
