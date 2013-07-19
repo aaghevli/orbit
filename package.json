@@ -2,5 +2,9 @@
 	"name": "orbit",
   	"version": "0.1.1",
   	"author": "Arash Aghevli",
-  	"description": "A orbital position calculator based on http://www.stjarnhimlen.se/comp/ppcomp.html"
+  	"description": "A orbital position calculator based on http://www.stjarnhimlen.se/comp/ppcomp.html",
+  	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/arashaghevli/orbit.git"
+	},
 }
