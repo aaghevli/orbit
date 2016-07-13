@@ -201,7 +201,7 @@
 		var zeclip = r * Math.sin(xw_rad) * Math.sin(i_rad);
 
 		var RA   = toDegrees(Math.atan2(yeclip, xeclip));
-	    var Decl = toDegrees(Math.asin(zeclip/r));
+    var Decl = toDegrees(Math.asin(zeclip/r));
 
 		return {
 			date: date,
