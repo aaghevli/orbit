@@ -1,5 +1,5 @@
 //*****************************************************************************
-// 
+//
 // Library based on http://www.stjarnhimlen.se/comp/ppcomp.html
 //
 // The primary orbital elements are here denoted as:
@@ -9,7 +9,7 @@
 //     a = semi-major axis, or mean distance from Sun
 //     e = eccentricity (0=circle, 0-1=ellipse, 1=parabola)
 //     M = mean anomaly (0 at perihelion; increases uniformly with time)
-// 
+//
 // Related orbital elements are:
 //     w1 = N + w   = longitude of perihelion
 //     L  = M + w1  = mean longitude
@@ -28,9 +28,9 @@
 			N:  48.3313 + 3.24587E-5   * d,
 			i:   7.0047 + 5.00E-8      * d,
 			w:  29.1241 + 1.01444E-5   * d,
-		    a: 0.387098,
-		    e: 0.205635 + 5.59E-10     * d,
-		    M: 168.6562 + 4.0923344368 * d
+	    a: 0.387098,
+	    e: 0.205635 + 5.59E-10     * d,
+	    M: 168.6562 + 4.0923344368 * d
 		};
 	};
 	exports.mercury = mercury;
@@ -39,11 +39,11 @@
 	venus.getOrbitalElements = function(d) {
 		return {
 			N:  76.6799 + 2.46590E-5   * d,
-		    i:   3.3946 + 2.75E-8      * d,
-		    w:  54.8910 + 1.38374E-5   * d,
-		    a: 0.723330,
-		    e: 0.006773 - 1.302E-9     * d,
-		    M:  48.0052 + 1.6021302244 * d
+	    i:   3.3946 + 2.75E-8      * d,
+	    w:  54.8910 + 1.38374E-5   * d,
+	    a: 0.723330,
+	    e: 0.006773 - 1.302E-9     * d,
+	    M:  48.0052 + 1.6021302244 * d
 		};
 	};
 	exports.venus = venus;
@@ -52,11 +52,11 @@
 	earth.getOrbitalElements = function(d) {
 		return {
 			N: 0.0,
-		    i: 0.0,
-		    w: 282.9404 + 4.70935E-5 * d,
-		    a: 1.000000,
-		    e: 0.016709 - 1.151E-9 * d,
-		    M: 356.0470 + 0.9856002585 * d
+	    i: 0.0,
+	    w: 282.9404 + 4.70935E-5 * d,
+	    a: 1.000000,
+	    e: 0.016709 - 1.151E-9 * d,
+	    M: 356.0470 + 0.9856002585 * d
 		};
 	}
 	exports.earth = earth;
@@ -64,12 +64,12 @@
 	var mars = mars || {name: "Mars"};
 	mars.getOrbitalElements = function(d) {
 		return {
-		    N:  49.5574 + 2.11081E-5   * d,
-		    i:   1.8497 - 1.78E-8      * d,
-		    w: 286.5016 + 2.92961E-5   * d,
-		    a: 1.523688,
-		    e: 0.093405 + 2.516E-9     * d,
-		    M:  18.6021 + 0.5240207766 * d
+	    N:  49.5574 + 2.11081E-5   * d,
+	    i:   1.8497 - 1.78E-8      * d,
+	    w: 286.5016 + 2.92961E-5   * d,
+	    a: 1.523688,
+	    e: 0.093405 + 2.516E-9     * d,
+	    M:  18.6021 + 0.5240207766 * d
 		};
 	};
 	exports.mars = mars;
@@ -78,11 +78,11 @@
 	jupiter.getOrbitalElements = function(d) {
 		return {
 			N: 100.4542 + 2.76854E-5   * d,
-		    i:   1.3030 - 1.557E-7     * d,
-		    w: 273.8777 + 1.64505E-5   * d,
-		    a: 5.20256,
-		    e: 0.048498 + 4.469E-9     * d,
-		    M:  19.8950 + 0.0830853001 * d
+	    i:   1.3030 - 1.557E-7     * d,
+	    w: 273.8777 + 1.64505E-5   * d,
+	    a: 5.20256,
+	    e: 0.048498 + 4.469E-9     * d,
+	    M:  19.8950 + 0.0830853001 * d
 		};
 	};
 	exports.jupiter = jupiter;
@@ -91,11 +91,11 @@
 	saturn.getOrbitalElements = function(d) {
 		return {
 			N: 113.6634 + 2.38980E-5   * d,
-		    i:   2.4886 - 1.081E-7     * d,
-		    w: 339.3939 + 2.97661E-5   * d,
-		    a: 9.55475,
-		    e: 0.055546 - 9.499E-9     * d,
-		    M: 316.9670 + 0.0334442282 * d,
+	    i:   2.4886 - 1.081E-7     * d,
+	    w: 339.3939 + 2.97661E-5   * d,
+	    a: 9.55475,
+	    e: 0.055546 - 9.499E-9     * d,
+	    M: 316.9670 + 0.0334442282 * d,
 		};
 	};
 	exports.saturn = saturn;
@@ -104,11 +104,11 @@
 	uranus.getOrbitalElements = function(d) {
 		return {
 			N:  74.0005 + 1.3978E-5    * d,
-		    i:   0.7733 + 1.9E-8       * d,
-		    w:  96.6612 + 3.0565E-5    * d,
-		    a: 19.18171 - 1.55E-8      * d,
-		    e: 0.047318 + 7.45E-9      * d,
-		    M: 142.5905 + 0.011725806  * d
+	    i:   0.7733 + 1.9E-8       * d,
+	    w:  96.6612 + 3.0565E-5    * d,
+	    a: 19.18171 - 1.55E-8      * d,
+	    e: 0.047318 + 7.45E-9      * d,
+	    M: 142.5905 + 0.011725806  * d
 		};
 	};
 	exports.uranus = uranus;
@@ -118,27 +118,27 @@
 		return {
 			N: 131.6737,
 			i:   1.7700 - 2.55E-7      * d,
-		    w: 272.8461 - 6.027E-6     * d,
-		    a: 30.05826 + 3.313E-8     * d,
-		    e: 0.008606 + 2.15E-9      * d,
-		    M: 260.2471 + 0.005995147  * d
+	    w: 272.8461 - 6.027E-6     * d,
+	    a: 30.05826 + 3.313E-8     * d,
+	    e: 0.008606 + 2.15E-9      * d,
+	    M: 260.2471 + 0.005995147  * d
 		};
 	};
 	exports.neptune = neptune;
 
-    var defaultOrbitalElements = function() {
+  var defaultOrbitalElements = function() {
 		return [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune];
 	}
 	exports.defaultOrbitalElements = defaultOrbitalElements;
 
 	//************************************************************************
 	// Returns the ecliptic x, y and z for the date given.
-	// 
+	//
 	// Example output:
 	//
 	// { date: Thu Apr 19 1990 00:00:00 GMT-0700 (PDT),
 	//   d: -3543,
-	//   orbitalElements: 
+	//   orbitalElements:
 	//    { N: 48.2162988259,
 	//      i: 7.00452285,
 	//      w: 29.088158390799997,
@@ -146,15 +146,15 @@
 	//      e: 0.205633019463,
 	//      M: 69.51529041759932 },
 	//   E: 81.15715124786009,
-	//   ecliptic: 
+	//   ecliptic:
 	//    { x: -0.3678208693993786,
 	//      y: 0.061084529098483234,
 	//      z: 0.038699088054971874 },
-	//   spherical: 
+	//   spherical:
 	//    { r: 0.3748614825201232,
 	//      lon: 2.9770232041366738,
 	//      lat: 0.10341996072132158 } }
-	// 
+	//
 	//************************************************************************
 	var computeOrbitalElementsByTime = function(body, date) {
 		var d = toDateNumber(date);
@@ -230,7 +230,7 @@
 	exports.computeOrbitalElementsByTime = computeOrbitalElementsByTime;
 
 	//************************************************************************
-	// Returns the ecliptic positions between two dates and a specific 
+	// Returns the ecliptic positions between two dates and a specific
 	// resolution.
 	//************************************************************************
 	var computeCelestialElementsByTimeRange = function(body, startDate, endDate, increment_days) {
@@ -250,10 +250,10 @@
 
 	function rev(x) {
 		var rv = x - Math.round(x/360.0)*360.0;
-	  	if (rv < 0.0) {
-	    	rv = rv + 360.0;
-	  	}
-	  	return rv;
+  	if (rv < 0.0) {
+    	rv = rv + 360.0;
+  	}
+  	return rv;
 	}
 
 	function toRadians(deg) {
@@ -279,7 +279,7 @@
 		console.log('date,x,y,z');
 		for (var i=0; i<data.length; i++) {
 			var row = data[i];
-			var output = row.date.toISOString()+', '+row.ecliptic.x+', '+row.ecliptic.y+', '+row.ecliptic.z; 
+			var output = row.date.toISOString()+', '+row.ecliptic.x+', '+row.ecliptic.y+', '+row.ecliptic.z;
 			console.log(output);
 		}
 	}
