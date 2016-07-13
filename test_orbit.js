@@ -4,14 +4,14 @@ var assert = require('assert');
 var test_date = new Date("April 19, 1990");
 var mercuryElements = orbit.computeOrbitalElementsByTime(orbit.mercury, test_date);
 
-assert.equal(mercuryElements.d, 			-3543, 					'd');
-assert.equal(mercuryElements.spherical.r, 	0.3748614825201232,    	'r');
-assert.equal(mercuryElements.spherical.lon, 170.57086510954474, 	'lon');
-assert.equal(mercuryElements.spherical.lat, 5.925527266740476, 		'lat');
+assert.equal(mercuryElements.d, 			      -3543, 					    'd');
+assert.equal(mercuryElements.spherical.r, 	0.3748614825201232, 'r');
+assert.equal(mercuryElements.spherical.lon, 170.57086510954474, 'lon');
+assert.equal(mercuryElements.spherical.lat, 5.925527266740476, 	'lat');
 
-assert.equal(mercuryElements.ecliptic.x,  	-0.3678208693993786, 	'x');
-assert.equal(mercuryElements.ecliptic.y, 	0.061084529098483234, 	'y');
-assert.equal(mercuryElements.ecliptic.z, 	0.038699088054971874, 	'z');
+assert.equal(mercuryElements.ecliptic.x,  -0.3678208693993786, 	'x');
+assert.equal(mercuryElements.ecliptic.y, 	0.061084529098483234, 'y');
+assert.equal(mercuryElements.ecliptic.z, 	0.038699088054971874, 'z');
 
 assert.deepEqual(orbit.computeOrbitalElementsByTime(orbit.venus, test_date).spherical,
 	{ r: 0.7266069855636131, lon: 263.65703409136654, lat: 359.58203985190556 }, "venus"
