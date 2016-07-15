@@ -29,5 +29,5 @@ assert.deepEqual(orbit.computeOrbitalElementsByTime(orbit.uranus, test_date).sph
 	{ r: 19.396282177303817, lon: 276.79986116847004, lat: 359.6997367329443 }, "uranus"
 );
 assert.deepEqual(orbit.computeOrbitalElementsByTime(orbit.neptune, test_date).spherical,
-	{ r: 30.19285275159162, lon: 282.71909974711394, lat: 0.8575325550199172 }, "neptune"
+  { r: 30.192852751591616, lon: 282.71909974711394, lat: 0.8575325550199172 }, "neptune"
 );

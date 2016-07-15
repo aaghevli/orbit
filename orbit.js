@@ -204,6 +204,7 @@
     var Decl = toDegrees(Math.asin(zeclip/r));
 
 		return {
+			name: body.name,
 			date: date,
 			d: d,
 			orbitalElements: {
@@ -238,12 +239,11 @@
 		var index = 0;
 		var data = [];
 		while (time < endDate) {
-			var ecliptic = computeCelestialElements(body, time);
+			var ecliptic = computeOrbitalElementsByTime(body, time);
 			ecliptic.date = new Date(time);
 			time.setDate(time.getDate() + increment_days);
-			data[index++] = ecliptic;
+			data.push(ecliptic);
 		}
-		data.name = body.name;
 		return data;
 	}
 	exports.computeCelestialElementsByTimeRange = computeCelestialElementsByTimeRange;
