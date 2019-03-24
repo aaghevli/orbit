@@ -48,7 +48,7 @@
 	};
 	exports.venus = venus;
 
-	var earth = earth || {name:"Earth"};
+	var earth = earth || {name: "Earth"};
 	earth.getOrbitalElements = function(d) {
 		return {
 			N: 0.0,
